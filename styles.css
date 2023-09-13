@@ -1,0 +1,38 @@
+body {
+    background-color:turquoise;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:grid;
+    grid-template-columns: clamp(150px, 20%, 300px) clamp(900px, 80%, 1800px);
+    grid-template-rows: clamp(150px, 20%, 300px) clamp(800px, 80%, 1600px);
+    margin:0;
+}
+
+.sidebar {
+    background-color:blueviolet;
+    display:grid;
+    grid-template-columns: clamp(25px, 20%, 75px) clamp(100px, 70%, 300px);
+    grid-row: 1 /  span 2; 
+    font-size: larger;
+    
+}
+
+.dash_list {
+    list-style-type: none;
+    grid-column: 2 / span 1;
+}
+
+li {
+    padding-top:15px; 
+    padding-bottom:15px;
+
+}
+
+#dashboard {
+    padding-bottom:50px;
+}
+
+.header {
+    background-color:rgb(243, 201, 208);
+    grid-column: 2 / span 1;
+}
