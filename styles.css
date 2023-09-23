@@ -1,38 +1,38 @@
 body {
-    background-color:turquoise;
+    background-color:rgb(211, 220, 227);
     color:black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display:grid;
     grid-template-columns: clamp(150px, 20%, 300px) clamp(900px, 80%, 1800px);
-    grid-template-rows: clamp(150px, 20%, 300px) clamp(800px, 80%, 1600px);
+    grid-template-rows: clamp(150px, 20%, 300px) clamp(900px, 80%, 1800px);
     margin:0;
 }
 
 .sidebar {
-    background-color:blueviolet;
+    background-color:rgb(170, 112, 223);
     display:grid;
-    grid-template-columns: clamp(25px, 20%, 75px) clamp(100px, 70%, 300px);
+    grid-template-columns: clamp(25px, 20%, 75px) clamp(100px, 70%, 300px); 
+    grid-template-rows: repeat(10, 75px);
+    align-items:center;
     grid-row: 1 /  span 2; 
-    font-size: larger;
-    
+    font-size: large;
+}
+
+#dash_icon {
+    font-size:larger;
+}
+
+.header {
+    background-color:turquoise;
+    grid-column: 2 / span 1;
+}
+
+img {
+    height: 30px;
+    width:auto;
+    padding-left:20px;
 }
 
 .dash_list {
     list-style-type: none;
-    grid-column: 2 / span 1;
-}
-
-li {
-    padding-top:15px; 
-    padding-bottom:15px;
-
-}
-
-#dashboard {
-    padding-bottom:50px;
-}
-
-.header {
-    background-color:rgb(243, 201, 208);
-    grid-column: 2 / span 1;
 }
