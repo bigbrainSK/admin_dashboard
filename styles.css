@@ -118,3 +118,30 @@ button {
     margin:20px;
     background-color:rgb(170, 112, 223);
 }
+
+.main_content {
+    margin:20px;
+    display:grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 40px repeat(3, 230px);
+}
+
+#feed_title {
+    grid-column:1 / span 1;
+    grid-row: 1/ span 1;
+}
+
+.cards {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    grid-column:1 / span 2;
+    grid-row: 2 / span 3; 
+}
+
+.card {
+    border: 1px solid purple;
+    border-radius:10px;
+    padding:.5rem;
+}
